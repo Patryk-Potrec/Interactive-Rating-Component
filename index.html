@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css"></link>
+    <title>Interactive Rating Component</title>
+</head>
+<body>
+    <div class="card card-main">
+        <div class="icon-star-container">
+            <img class="icon-star" src="./images/icon-star.svg">
+        </div>
+        <h1 class="main-header">How did we do?</h1>
+        <p class="main-paragraph">Please let us know how we did with your
+            support request. All feedback is appreciated
+            to help us improve our offering!</p>
+
+        <div action="" class="rating-container">
+            <div class="rating" data-selected="false">
+                <p class="rating-value">1</p>
+            </div>
+            <div class="rating" data-selected="false">
+                <p class="rating-value">2</p>
+            </div>
+            <div class="rating" data-selected="false">
+                <p class="rating-value">3</p>
+            </div>
+            <div class="rating" data-selected="false">
+                <p class="rating-value">4</p>
+            </div>
+            <div class="rating" data-selected="false">
+                <p class="rating-value">5</p>
+            </div>
+        </div>
+        <button type="submit" class="btn-submit">SUBMIT</button>
+    </div>
+
+    <div class="card card-submitted hidden">
+        <img src="./images/illustration-thank-you.svg">
+        <div class="selected-value"></div>
+        <h1 class="main-header">Thank you!</h1>
+        <p class="main-paragraph">We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
